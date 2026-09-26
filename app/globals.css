@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 40 20% 97%;
+  --fg: 200 30% 10%;
+  --muted: 40 10% 45%;
+  --border: 40 15% 88%;
+  --card: 0 0% 100%;
+  --primary: 174 55% 22%;        /* Neretva teal / forest */
+  --primary-fg: 0 0% 100%;
+  --accent: 16 70% 55%;          /* terracotta / sunset stone */
+  --accent-fg: 0 0% 100%;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-display: "Fraunces", Georgia, serif;
+}
+
+.dark {
+  --bg: 200 35% 7%;
+  --fg: 40 20% 96%;
+  --muted: 40 10% 65%;
+  --border: 200 20% 18%;
+  --card: 200 30% 10%;
+  --primary: 174 60% 45%;
+  --primary-fg: 200 35% 7%;
+  --accent: 16 80% 62%;
+  --accent-fg: 200 35% 7%;
+}
+
+body {
+  background: hsl(var(--bg));
+  color: hsl(var(--fg));
+}
+
+.glass {
+  background: hsl(var(--card) / 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid hsl(var(--border) / 0.6);
+}
